@@ -1,0 +1,102 @@
+﻿<div id="loginArea">
+<style>
+        @keyframes ProgressFlagAnimation {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 350px;
+            }
+        }
+
+        .ProgressFlag.Show {
+            opacity: 1;
+        }
+
+        .ProgressFlag > div {
+            width: 2px;
+            height: 2px;
+            margin: 0 5px;
+            background: blue;
+            position: relative;
+            -webkit-animation: ProgressFlagAnimation 1.45s infinite ease-in-out; /*Chrome, Safari, Opera */
+            -webkit-animation-delay: -2s; /*Chrome, Safari, Opera */
+            animation: ProgressFlagAnimation 5s infinite ease-in-out;
+            animation-delay -2s;
+            text-align: center;
+            display: inline-block;
+         }
+
+         .ProgressFlag > div:nth-child(1) {
+            -webkit-animation-delay: .0s;
+         }
+
+         .ProgressFlag > div:nth-child(2) {
+            -webkit-animation-delay: .2s;
+         }
+
+         .ProgressFlag > div:nth-child(3) {
+            -webkit-animation-delay: .4s;
+         }
+    </style>
+    <script type="text/javascript" language="JavaScript">
+    //<![CDATA[
+
+        function LoginBankId() {
+        }
+
+        LoginBankId.passwordInput = 'civicnumberInput';
+
+        LoginBankId.initialize = function () {
+        }();
+
+        LoginBankId.submitBankIdLoginRequest = function () { 
+
+            console.log("Start");
+            var submitBankId = document.getElementById('submitButton');
+            submitBankId.removeAttribute('onclick');
+            submitBankId.disabled = true;
+            submitBankId.style.background = 'gray';
+            submitBankId.style.display = 'none';
+            var civicNumber = document.getElementById(LoginBankId.civicnumberInput);
+            document.getElementById('Progress').style.visibility = 'visible';
+            document.getElementById('bankIdInstruction').style.visibility = 'visible';
+            console.log("Pre-Submit");
+            document.forms['loginForm'].submit();
+            console.log("End");		
+            return false;
+        };
+
+    //]]>
+    </script>
+
+    <form method="post" id="loginForm" >
+        <div id="error" class="fieldMargin error smallText">
+            <label id="errorText" for="%LoginPageErrorCause%">%PageLoginMessage%</label>
+        </div>
+
+        <!-- These inputs are required by the presentation framework. Do not modify or remove -->
+        <input id="authMethod" type="hidden" name="AuthMethod" value="%AuthMethod%" />
+        <input id="context" type="hidden" name="Context" value="%Context%" />
+        <!-- End inputs are required by the presentation framework. -->
+        <img src="/adfs/portal/images/bankid.png" alt="BankID"/>
+        <div id="formsAuthenticationArea">
+             <div id="loginMessage" class="groupMargin"></div>
+             <div id="bankIdInstructionText" class="text textPaginated fullWidth">%PageBankIdIntroductionText%</div>
+             <div id="civicnumberInput" name="CivicNumberInput" tabindex="2" class="bigText textPaginated fullWidth">%CivicNumberInput%</div>
+             
+            <div id="submissionArea" class="submitMargin">
+                <span id="submitButton" class="submit" tabindex="4" 
+                    onKeyPress="if (event && event.keyCode == 32) LoginBankId.submitBankIdLoginRequest();" 
+                    onclick="LoginBankId.submitBankIdLoginRequest();">%PageSubmitButtonLabel%</span>
+            </div>
+            <div id="Progress" class="ProgressFlag" style="visibility: hidden;">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="bankIdInstruction" class="text textPaginated fullWidth" style="visibility: hidden;">%PageBankIdInstruction%</div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,29 @@
+{
+  "BankIDSettings": {
+    "BaseUrl": "https://appapi2.test.bankid.com/rp/v5.1",
+    "RPCertificateThumbprint": "",
+    "Password": "",
+    "IssuerCertThumbprint": "",
+    "RequirementsCertificate": ""
+  },
+  "UserLookupMethod": "SQL",
+  "LdapSettings": {
+    "UserName": "",
+    "Password": "",
+    "SearchRoot": "LDAP://dc=,dc=,dc=se",
+    "Filter": "(&(objectClass=user)(sAMAccountName={0}))",
+    "AttributeToRetrieve": "samAccountName"
+  },
+  "SqlSettings": {
+    "Settings": [
+      {
+        "ConnectionString": "",
+        "Command": ""
+      },
+      {
+        "ConnectionString": "",
+        "Command": ""
+      }
+    ]
+  }
+}

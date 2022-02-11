@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSBankIDSecondFactor", "ADFSBankIDSecondFactor\ADFSBankIDSecondFactor.csproj", "{689F7E19-BA0E-4587-A5E0-1BDD66F153D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankID", "BankID\BankID.csproj", "{6D3F0F14-1C97-4D17-B8CD-A9CA81B1DE6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{DB3FC952-81C2-4AD6-95F1-6D0AF0991FB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2019", "2019", "{674F29DA-E101-4577-A865-B80E94B8D746}"
+	ProjectSection(SolutionItems) = preProject
+		2019\Microsoft.IdentityServer.Web.dll = 2019\Microsoft.IdentityServer.Web.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSBankIdTest", "ADFSBankIdTest\ADFSBankIdTest.csproj", "{4452D702-0B5F-4137-8C96-FCEC66B85BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSBankID.Application", "ADFSBankID.Application\ADFSBankID.Application.csproj", "{B43E76CE-6F68-4AB4-A2E6-F2E8DBAC0765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{689F7E19-BA0E-4587-A5E0-1BDD66F153D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{689F7E19-BA0E-4587-A5E0-1BDD66F153D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{689F7E19-BA0E-4587-A5E0-1BDD66F153D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{689F7E19-BA0E-4587-A5E0-1BDD66F153D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3F0F14-1C97-4D17-B8CD-A9CA81B1DE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3F0F14-1C97-4D17-B8CD-A9CA81B1DE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3F0F14-1C97-4D17-B8CD-A9CA81B1DE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3F0F14-1C97-4D17-B8CD-A9CA81B1DE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4452D702-0B5F-4137-8C96-FCEC66B85BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4452D702-0B5F-4137-8C96-FCEC66B85BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4452D702-0B5F-4137-8C96-FCEC66B85BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4452D702-0B5F-4137-8C96-FCEC66B85BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43E76CE-6F68-4AB4-A2E6-F2E8DBAC0765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43E76CE-6F68-4AB4-A2E6-F2E8DBAC0765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43E76CE-6F68-4AB4-A2E6-F2E8DBAC0765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43E76CE-6F68-4AB4-A2E6-F2E8DBAC0765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{674F29DA-E101-4577-A865-B80E94B8D746} = {DB3FC952-81C2-4AD6-95F1-6D0AF0991FB5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF87DD43-6B40-49D7-BE02-C40F82FC9476}
+	EndGlobalSection
+EndGlobal
