@@ -127,8 +127,6 @@
     <None Include="BankIDSettings.json" />
     <None Include="packages.config" />
     <None Include="README.md" />
-    <None Include="Scripts\Install-ADFSBankIDAdapter.ps1" />
-    <None Include="Scripts\Uninstall-ADFSBankIDAdapter.ps1" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\PresentationResource.resx">

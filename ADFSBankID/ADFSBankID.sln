@@ -18,6 +18,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSBankIdTest", "ADFSBankI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADFSBankID.Application", "ADFSBankID.Application\ADFSBankID.Application.csproj", "{B43E76CE-6F68-4AB4-A2E6-F2E8DBAC0765}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{DA11C0C6-26F9-4833-99CC-CD9023067DDF}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Install-ADFSBankIDAdapter.ps1 = Scripts\Install-ADFSBankIDAdapter.ps1
+		Scripts\Install-ADFSBankIDMFA.ps1 = Scripts\Install-ADFSBankIDMFA.ps1
+		Scripts\Uninstall-ADFSBankIDAdapter.ps1 = Scripts\Uninstall-ADFSBankIDAdapter.ps1
+		Scripts\Uninstall-ADFSBankIDMFA.ps1 = Scripts\Uninstall-ADFSBankIDMFA.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
